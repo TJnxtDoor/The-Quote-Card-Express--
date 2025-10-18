@@ -9,3 +9,12 @@ app.use(express.urlencoded({extended: false}));
 const express = require("express");
 const app = express();
 const port = 8080;
+require("dotenv").config();
+const cors = require("cors");
+app.use("/api/v1/getRandomImage", (request, response) => {
+    response.status(200).json({
+        status: 200,
+        data: process.env.CLIENT_ID
+    });
+});
+app.use(cors());
