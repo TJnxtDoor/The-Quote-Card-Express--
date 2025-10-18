@@ -35,6 +35,7 @@
 // 
 // setTimeout(loopThroughQuotes, 3000);}
 
+const apiKey = process.env.ACCESS_KEY;
 
 async function getRandomImage() {
     const client_id = "YOUR_ACCESS_KEY";
