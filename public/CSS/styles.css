@@ -15,7 +15,7 @@ body {
 }
 
 .background-img {
-    background-image: url("/img/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg");
+    background-image: url("/public/img/mitchell-luo-FWoq_ldWlNQ-unsplash.jpg");
     background-size: cover;
     position: fixed;
     top: 0;
