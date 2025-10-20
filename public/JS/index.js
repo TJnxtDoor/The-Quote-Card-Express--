@@ -54,7 +54,7 @@ async function getRandomImage(apiKey) {
     }
 }
 async function initializeApp() {
-    const apiKey = await getApiKey();
+    const apiKey = await getApiKey("/api/v1/unsplash-key");
     getRandomImage(apiKey);
 }
 initializeApp();
