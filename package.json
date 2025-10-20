@@ -1,11 +1,15 @@
 {
   "name": "the-quote-card-express--",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express.JS\r ```bash\r   npm install express\r ```\r nodemon\r ```bash\r   npm install --save-dev nodemon\r ```",
   "main": "nodemon server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack serve --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
+
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -16,6 +20,17 @@
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+    "nodemon": "^3.1.10",
+    "webpack": "^5.102.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TJnxtDoor/The-Quote-Card-Express--.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TJnxtDoor/The-Quote-Card-Express--/issues"
+  },
+  "homepage": "https://github.com/TJnxtDoor/The-Quote-Card-Express--#readme"
 }
