@@ -7,6 +7,7 @@ require("dotenv").config();
 const app = express();
 const port = 3000; 
 
+
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -14,7 +15,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
 
 // API endpoint to provide the client-side code with the API key.
-// Note: This exposes your key to anyone who calls this endpoint.
 app.get("/api/v1/unsplash-key", (request, response) => {
     if (process.env.ACCESS_KEY) {
         response.status(200).json({ accessKey: process.env.ACCESS_KEY });

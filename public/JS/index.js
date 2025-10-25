@@ -52,9 +52,14 @@ async function getRandomImage(apiKey) {
     } catch (error) {
         console.error("Error fetching random image:", error);
     }
+    const corsOptions = {
+    origin: `http://localhost:${port}`
+}
 }
 async function initializeApp() {
     const apiKey = await getApiKey("/api/v1/unsplash-key");
     getRandomImage(apiKey);
+
+    
 }
 initializeApp();
